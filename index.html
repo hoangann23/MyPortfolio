@@ -3,9 +3,28 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+  body {
+    margin: 0;
+  }
+  
+  .modelImage {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    display: block;
+  }
+  
+  .webgl {
+    display: block;
+  }
+</style>
         <title>3D Model Loader</title>
     </head>
     <body>
+        <img src="./images/house.png" alt="thumbnail for house model" class="modelImage" style="cursor: pointer; width:200px; height:200px;" onclick="createScene('./models/house.glb'); startAnimation()">
+        <img src="./images/light.png" alt="thumbnail for light model" class="modelImage" style="cursor: pointer; width:200px; height:200px;" onclick="createScene('./models/light.glb'); startAnimation()">
         <canvas class = "webgl"></canvas>
         <script type="importmap">
         {
@@ -14,6 +33,6 @@
             }
         }
         </script>
-        <script type="module" src="index.js"></script>
+        <script type="module" src="./js/render.js"></script>
     </body>
 </html>
