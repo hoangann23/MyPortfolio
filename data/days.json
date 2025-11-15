@@ -1,0 +1,264 @@
+{
+    "id": "days",
+    "data": {
+        "days": [
+            {
+                "day": 0,
+                "date": "Before November 10th, 2025",
+                "description": "",
+                "models": [
+                    {
+                        "model": "house",
+                        "modelPath": "/models/house.glb",
+                        "imagePath": "/images/day0/house.png",
+                        "imageType": "square", 
+                        "imageDescription": "thumbnail for house model",
+                        "notes": ""
+                    },
+                    {
+                        "model": "room",
+                        "modelPath": "/models/room.glb",
+                        "imagePath": "/images/day0/room.png",
+                        "imageType": "square", 
+                        "imageDescription": "thumbnail for room model",
+                        "notes": ""
+                    },
+                    {
+                        "model": "rook",
+                        "modelPath": "/models/rook.glb",
+                        "imagePath": "/images/day0/rook.png",
+                        "imageType": "square", 
+                        "imageDescription": "thumbnail for rook model",
+                        "notes": ""
+                    },
+                    {
+                        "model": "cat",
+                        "modelPath": "/models/cat.glb",
+                        "imagePath": "/images/day0/cat.png",
+                        "imageType": "square", 
+                        "imageDescription": "thumbnail for cat model",
+                        "notes": ""
+                    },
+                    {
+                        "model": "bottle",
+                        "modelPath": "/models/bottle.glb",
+                        "imagePath": "/images/day0/bottle.png",
+                        "imageType": "square", 
+                        "imageDescription": "thumbnail for bottle model",
+                        "notes": ""
+                    },
+                    {
+                        "model": "light",
+                        "modelPath": "/models/light.glb",
+                        "imagePath": "/images/day0/light.png",
+                        "imageType": "square", 
+                        "imageDescription": "thumbnail for light model",
+                        "notes": ""
+                    }
+                ]
+            },
+            {
+                "day": 1,
+                "date": "November 10th, 2025",
+                "description": "",
+                "models": [
+                    {
+                        "model": "pinetree",
+                        "modelPath": "/models/pinetree.glb",
+                        "imagePath": "/images/day1/pinetrees.png",
+                        "imageType": "rectangle", 
+                        "imageDescription": "thumbnail for pinetree model",
+                        "notes": ""
+                    }
+                ]
+            },
+            {
+                "day": 2,
+                "date": "November 11th, 2025",
+                "description": "",
+                "models": [
+                    {
+                        "model": "LowPolyWater",
+                        "modelPath": "/models/water.glb",
+                        "imagePath": "/images/day2/waterLP.png",
+                        "imageType": "rectangle", 
+                        "imageDescription": "thumbnail for LowPolyWater model",
+                        "notes": ""
+                    },
+                    {
+                        "model": "LowPolyBottle",
+                        "modelPath": "/models/bottleLP.glb",
+                        "imagePath": "/images/day2/bottleLP.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for LowPolyBottle model",
+                        "notes": ""
+                    },
+                    {
+                        "model": "LowPolyRook",
+                        "modelPath": "/models/rookLP.glb",
+                        "imagePath": "/images/day2/rookLP.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for LowPolyRook model",
+                        "notes": ""
+                    },
+                    {
+                        "model": "LowPolyCat",
+                        "modelPath": "/models/catLP.glb",
+                        "imagePath": "/images/day2/catLP.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for LowPolyCat model",
+                        "notes": ""
+                    },
+                    {
+                        "model": "LowPolyKirby",
+                        "modelPath": "/models/kirbyLP.glb",
+                        "imagePath": "/images/day2/kirbyLP.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for LowPolyKirby model",
+                        "notes": ""
+                    }
+                ]
+            },
+            {
+                "day": 3,
+                "date": "November 12th, 2025",
+                "description": "",
+                "models": [
+                    {
+                        "model": "palmTreeTrunk",
+                        "modelPath": "/models/palmtree.glb",
+                        "imagePath": "/images/day3/palmTreeTrunk.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for palm tree trunk without leaves",
+                        "notes": ""
+                    },
+                    {
+                        "model": "palmTreeLeafPreCut",
+                        "modelPath": "/models/palmtree.glb",
+                        "imagePath": "/images/day3/palmTreeLeaf.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for the palm tree leaf before detailing",
+                        "notes": ""
+                    },
+                    {
+                        "model": "palmTreeLeafFinal",
+                        "modelPath": "/models/palmtree.glb",
+                        "imagePath": "/images/day3/palmTreeLeafFinal.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for the palm tree leaf after detailing",
+                        "notes": ""
+                    },
+                    {
+                        "model": "palmTreePreShaded",
+                        "modelPath": "/models/palmtree.glb",
+                        "imagePath": "/images/day3/palmTreePreShaded.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for palm tree without material",
+                        "notes": ""
+                    }
+                ]
+            },
+            {
+                "day": 4,
+                "date": "November 13th, 2025",
+                "description": "",
+                "models": [
+                    {
+                        "model": "palmTreeFinal1",
+                        "modelPath": "/models/palmtree.glb",
+                        "imagePath": "/images/day4/palmTreeFinal1.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for palm tree",
+                        "notes": ""
+                    },
+                    {
+                        "model": "palmTreeFinal2",
+                        "modelPath": "/models/palmtree.glb",
+                        "imagePath": "/images/day4/palmTreeFinal2.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for palm tree 2",
+                        "notes": ""
+                    },
+                    {
+                        "model": "moon",
+                        "modelPath": "/models/moon.glb",
+                        "imagePath": "/images/day4/crescentMoon.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for crescent moon",
+                        "notes": ""
+                    },
+                    {
+                        "model": "snoopy1",
+                        "modelPath": "/models/snoopy.glb",
+                        "imagePath": "/images/day4/snoopy1.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for snoopy 1",
+                        "notes": ""
+                    },
+                    {
+                        "model": "snoopy2",
+                        "modelPath": "/models/snoopy.glb",
+                        "imagePath": "/images/day4/snoopy2.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for snoopy 2",
+                        "notes": ""
+                    }
+                ]
+            },
+            {
+                "day": 5,
+                "date": "November 14th, 2025",
+                "description": "",
+                "models": [
+                    {
+                        "model": "leatherWrap",
+                        "modelPath": "/models/leatherwrap.glb",
+                        "imagePath": "/images/day5/leather.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for leather",
+                        "notes": ""
+                    },
+                    {
+                        "model": "ball",
+                        "modelPath": "/models/ball.glb",
+                        "imagePath": "/images/day5/ball.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for ball",
+                        "notes": ""
+                    },
+                    {
+                        "model": "croissant",
+                        "modelPath": "/models/moon2.glb",
+                        "imagePath": "/images/day5/croissant.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for croissant",
+                        "notes": ""
+                    },
+                    {
+                        "model": "crescentMoon2",
+                        "modelPath": "/models/moon2.glb",
+                        "imagePath": "/images/day5/crescentMoon2.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for crescent moon 2",
+                        "notes": ""
+                    }
+                ]
+            },
+            {
+                "day": 6,
+                "date": "November 15th, 2025",
+                "description": "",
+                "models": [
+                    {
+                        "model": "pochacco",
+                        "modelPath": "/models/pochacco.glb",
+                        "imagePath": "/images/day6/pochacco.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for pochacco",
+                        "notes": ""
+                    }
+                ]
+            }
+        ]
+    }
+}
