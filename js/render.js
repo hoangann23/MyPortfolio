@@ -22,8 +22,9 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
 const controls = new OrbitControls(camera, renderer.domElement)
 
+let model
 let modelPosition
-let currentModelPath = '';
+let currentModelPath = ''
 
 function createScene(modelPath) {
     if (modelPath === currentModelPath) {
@@ -43,7 +44,7 @@ window.createScene = createScene;
 function changeModel(modelPath) {
     // Optionally, you can reload the model here
     loader.load(modelPath, function(glb) {
-        const model = glb.scene
+        model = glb.scene
         model.scale.set(50, 50, 50)
         modelPosition = model.position
         console.log(glb)
@@ -82,6 +83,12 @@ function setUpControls() {
 // Expose changeModel so inline handlers can call it from the global scope.
 // Using the same name as the inline handler keeps the HTML unchanged.
 window.changeModel = changeModel;
+
+function moveModelLeft() {
+    model.position.x -= 0.1
+}
+
+window.moveModelLeft = moveModelLeft;
 
 let frame = 1
 function animate() {
