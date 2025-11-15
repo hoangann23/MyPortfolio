@@ -61,8 +61,8 @@ function changeModel(modelPath) {
 function placeLights() {
     //Add lights to the scene, so we can actually see the 3D model
     // to do: add menu options to adjust light intensity, color, and position
-    light = new THREE.DirectionalLight(0xffffff, 15); // (color, intensity)
-    light.position.set(500, 500, 500) //top-left-ish
+    light = new THREE.DirectionalLight(0xffffff, 5); // (color, intensity)
+    light.position.set(0, 1, 2) //top-left-ish
     scene.add(light);
 }
 
@@ -89,6 +89,7 @@ window.changeModel = changeModel;
 function animate() {
     requestAnimationFrame(animate)
     controls.update()
+    light.position.copy(camera.position)
     renderer.render(scene, camera)
 }
 
