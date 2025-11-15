@@ -1,0 +1,99 @@
+{
+"models" : [
+    {
+        "model": "house.glb",
+        "scale": {
+            "x": 5,
+            "y": 5,
+            "z": 5
+        },
+        "light": {
+            "color": "0xffffff",
+            "intensity": 15,
+            "position": {
+                "x": 500,
+                "y": 500,
+                "z": 500
+            }
+        },
+        "camera": {
+            "position": {
+                "x": -0.23139242651711647,
+                "y": 0.06048540283592574,
+                "z": 0.15627298939409598
+            }
+        }
+    },
+    {
+        "model": "light.glb",
+        "scale": {
+            "x": 5,
+            "y": 5,
+            "z": 5
+        },
+        "light": {
+            "color": "0xffffff",
+            "intensity": 15,
+            "position": {
+                "x": 500,
+                "y": 500,
+                "z": 500
+            }
+        },
+        "camera": {
+            "position": {
+                "x": -0.23139242651711647,
+                "y": 0.06048540283592574,
+                "z": 0.15627298939409598
+            }
+        }
+    },
+    {
+        "model": "rook.glb",
+        "scale": {
+            "x": 200,
+            "y": 200,
+            "z": 200
+        },
+        "light": {
+            "color": "0xffffff",
+            "intensity": 15,
+            "position": {
+                "x": 500,
+                "y": 500,
+                "z": 500
+            }
+        },
+        "camera": {
+            "position": {
+                "x": 0,
+                "y": 1,
+                "z": 2
+            }
+        }
+    },
+    {
+        "model": "rookLP.glb",
+        "scale": {
+            "x": 200,
+            "y": 200,
+            "z": 200
+        },
+        "light": {
+            "color": "0xffffff",
+            "intensity": 15,
+            "position": {
+                "x": 500,
+                "y": 500,
+                "z": 500
+            }
+        },
+        "camera": {
+            "position": {
+                "x": 2.061021729363383, 
+                "y": 1.0527133713619494, 
+                "z": 0.8869549602758465}
+        }
+    }
+]
+}
