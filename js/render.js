@@ -26,6 +26,8 @@ let model
 let modelPosition
 let currentModelPath = ''
 
+let light
+
 function createScene(modelPath) {
     if (modelPath === currentModelPath) {
         return; // No change needed
@@ -59,9 +61,9 @@ function changeModel(modelPath) {
 function placeLights() {
     //Add lights to the scene, so we can actually see the 3D model
     // to do: add menu options to adjust light intensity, color, and position
-    const topLight = new THREE.DirectionalLight(0xffffff, 15); // (color, intensity)
-    topLight.position.set(500, 500, 500) //top-left-ish
-    scene.add(topLight);
+    light = new THREE.DirectionalLight(0xffffff, 15); // (color, intensity)
+    light.position.set(500, 500, 500) //top-left-ish
+    scene.add(light);
 }
 
 function setUpCamera() {
@@ -84,13 +86,6 @@ function setUpControls() {
 // Using the same name as the inline handler keeps the HTML unchanged.
 window.changeModel = changeModel;
 
-function moveModelLeft() {
-    model.position.x -= 0.1
-}
-
-window.moveModelLeft = moveModelLeft;
-
-let frame = 1
 function animate() {
     requestAnimationFrame(animate)
     controls.update()
@@ -100,13 +95,30 @@ function animate() {
     }
 
     renderer.render(scene, camera)
-    frame++
-    if (frame > 100) {
-        frame = 1
-    }
 }
 
 // Expose a safe global starter so inline handlers can start the module animation.
 // We use a different name (`startAnimation`) to avoid colliding with the
 // Element.prototype.animate method available on DOM elements.
 window.startAnimation = animate;
+
+function updateModelPosition(x, y, z) {
+    if (model) {
+        model.position.set(x, y, z);
+    }
+}
+window.updateModelPosition = updateModelPosition;
+
+function updateLightIntensity(intensity) {
+    if (light) {
+        light.intensity = intensity;
+    }
+}
+window.updateLightIntensity = updateLightIntensity;
+
+function updateLightPosition(x, y, z) {
+    if (light) {
+        light.position.set(x, y, z);
+    }
+}
+window.updateLightPosition = updateLightPosition;
