@@ -89,11 +89,6 @@ window.changeModel = changeModel;
 function animate() {
     requestAnimationFrame(animate)
     controls.update()
-    if (frame % 100 === 0) {
-        console.log('camera position: ', camera.position)
-        console.log('model position: ', modelPosition)
-    }
-
     renderer.render(scene, camera)
 }
 
