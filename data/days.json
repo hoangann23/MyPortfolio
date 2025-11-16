@@ -9,6 +9,7 @@
                 "models": [
                     {
                         "model": "house",
+                        "modelName": "house",
                         "modelPath": "/models/house.glb",
                         "imagePath": "/images/day0/house.png",
                         "imageType": "square", 
@@ -17,6 +18,7 @@
                     },
                     {
                         "model": "room",
+                        "modelName": "room",
                         "modelPath": "/models/room.glb",
                         "imagePath": "/images/day0/room.png",
                         "imageType": "square", 
@@ -25,6 +27,7 @@
                     },
                     {
                         "model": "rook",
+                        "modelName": "rook",
                         "modelPath": "/models/rook.glb",
                         "imagePath": "/images/day0/rook.png",
                         "imageType": "square", 
@@ -33,6 +36,7 @@
                     },
                     {
                         "model": "cat",
+                        "modelName": "cat",
                         "modelPath": "/models/cat.glb",
                         "imagePath": "/images/day0/cat.png",
                         "imageType": "square", 
@@ -41,6 +45,7 @@
                     },
                     {
                         "model": "bottle",
+                        "modelName": "bottle",
                         "modelPath": "/models/bottle.glb",
                         "imagePath": "/images/day0/bottle.png",
                         "imageType": "square", 
@@ -49,6 +54,7 @@
                     },
                     {
                         "model": "light",
+                        "modelName": "light",
                         "modelPath": "/models/light.glb",
                         "imagePath": "/images/day0/light.png",
                         "imageType": "square", 
@@ -64,6 +70,7 @@
                 "models": [
                     {
                         "model": "pinetree",
+                        "modelName": "pinetree",
                         "modelPath": "/models/pinetree.glb",
                         "imagePath": "/images/day1/pinetrees.png",
                         "imageType": "rectangle", 
@@ -79,6 +86,7 @@
                 "models": [
                     {
                         "model": "LowPolyWater",
+                        "modelName": "LowPolyWater",
                         "modelPath": "/models/water.glb",
                         "imagePath": "/images/day2/waterLP.png",
                         "imageType": "rectangle", 
@@ -87,6 +95,7 @@
                     },
                     {
                         "model": "LowPolyBottle",
+                        "modelName": "LowPolyBottle",
                         "modelPath": "/models/bottleLP.glb",
                         "imagePath": "/images/day2/bottleLP.png",
                         "imageType": "square",
@@ -95,6 +104,7 @@
                     },
                     {
                         "model": "LowPolyRook",
+                        "modelName": "LowPolyRook",
                         "modelPath": "/models/rookLP.glb",
                         "imagePath": "/images/day2/rookLP.png",
                         "imageType": "square",
@@ -103,6 +113,7 @@
                     },
                     {
                         "model": "LowPolyCat",
+                        "modelName": "LowPolyCat",
                         "modelPath": "/models/catLP.glb",
                         "imagePath": "/images/day2/catLP.png",
                         "imageType": "square",
@@ -111,6 +122,7 @@
                     },
                     {
                         "model": "LowPolyKirby",
+                        "modelName": "LowPolyKirby",
                         "modelPath": "/models/kirbyLP.glb",
                         "imagePath": "/images/day2/kirbyLP.png",
                         "imageType": "square",
@@ -125,7 +137,8 @@
                 "description": "",
                 "models": [
                     {
-                        "model": "palmTreeTrunk",
+                        "model": "palmtree",
+                        "modelName": "palmTreeTrunk",
                         "modelPath": "/models/palmtree.glb",
                         "imagePath": "/images/day3/palmTreeTrunk.png",
                         "imageType": "square",
@@ -133,7 +146,8 @@
                         "notes": ""
                     },
                     {
-                        "model": "palmTreeLeafPreCut",
+                        "model": "palmtree",
+                        "modelName": "palmTreeLeafPreCut",
                         "modelPath": "/models/palmtree.glb",
                         "imagePath": "/images/day3/palmTreeLeaf.png",
                         "imageType": "square",
@@ -141,7 +155,8 @@
                         "notes": ""
                     },
                     {
-                        "model": "palmTreeLeafFinal",
+                        "model": "palmtree",
+                        "modelName": "palmTreeLeafFinal",
                         "modelPath": "/models/palmtree.glb",
                         "imagePath": "/images/day3/palmTreeLeafFinal.png",
                         "imageType": "square",
@@ -149,7 +164,8 @@
                         "notes": ""
                     },
                     {
-                        "model": "palmTreePreShaded",
+                        "model": "palmtree",
+                        "modelName": "palmTreePreShaded",
                         "modelPath": "/models/palmtree.glb",
                         "imagePath": "/images/day3/palmTreePreShaded.png",
                         "imageType": "square",
@@ -164,7 +180,8 @@
                 "description": "",
                 "models": [
                     {
-                        "model": "palmTreeFinal1",
+                        "model": "palmtree",
+                        "modelName": "palmTreeFinal1",
                         "modelPath": "/models/palmtree.glb",
                         "imagePath": "/images/day4/palmTreeFinal1.png",
                         "imageType": "square",
@@ -172,7 +189,8 @@
                         "notes": ""
                     },
                     {
-                        "model": "palmTreeFinal2",
+                        "model": "palmtree",
+                        "modelName": "palmTreeFinal2",
                         "modelPath": "/models/palmtree.glb",
                         "imagePath": "/images/day4/palmTreeFinal2.png",
                         "imageType": "square",
@@ -181,6 +199,7 @@
                     },
                     {
                         "model": "moon",
+                        "modelName": "moon",
                         "modelPath": "/models/moon.glb",
                         "imagePath": "/images/day4/crescentMoon.png",
                         "imageType": "square",
@@ -188,7 +207,8 @@
                         "notes": ""
                     },
                     {
-                        "model": "snoopy1",
+                        "model": "snoopy",
+                        "modelName": "snoopy1",
                         "modelPath": "/models/snoopy.glb",
                         "imagePath": "/images/day4/snoopy1.png",
                         "imageType": "square",
@@ -196,7 +216,8 @@
                         "notes": ""
                     },
                     {
-                        "model": "snoopy2",
+                        "model": "snoopy",
+                        "modelName": "snoopy2",
                         "modelPath": "/models/snoopy.glb",
                         "imagePath": "/images/day4/snoopy2.png",
                         "imageType": "square",
@@ -211,7 +232,8 @@
                 "description": "",
                 "models": [
                     {
-                        "model": "leatherWrap",
+                        "model": "leather",
+                        "modelName": "leatherWrap",
                         "modelPath": "/models/leatherwrap.glb",
                         "imagePath": "/images/day5/leather.png",
                         "imageType": "square",
@@ -220,6 +242,7 @@
                     },
                     {
                         "model": "ball",
+                        "modelName": "ball",
                         "modelPath": "/models/ball.glb",
                         "imagePath": "/images/day5/ball.png",
                         "imageType": "square",
@@ -227,7 +250,8 @@
                         "notes": ""
                     },
                     {
-                        "model": "croissant",
+                        "model": "moon2",
+                        "modelName": "croissant",
                         "modelPath": "/models/moon2.glb",
                         "imagePath": "/images/day5/croissant.png",
                         "imageType": "square",
@@ -235,7 +259,8 @@
                         "notes": ""
                     },
                     {
-                        "model": "crescentMoon2",
+                        "model": "moon2",
+                        "modelName": "crescentMoon2",
                         "modelPath": "/models/moon2.glb",
                         "imagePath": "/images/day5/crescentMoon2.png",
                         "imageType": "square",
@@ -251,6 +276,7 @@
                 "models": [
                     {
                         "model": "pochacco",
+                        "modelName": "pochacco",
                         "modelPath": "/models/pochacco.glb",
                         "imagePath": "/images/day6/pochacco.png",
                         "imageType": "square",
@@ -259,10 +285,20 @@
                     },
                     {
                         "model": "pochaccoV2",
+                        "modelName": "pochaccoV2",
                         "modelPath": "/models/pochaccoV2.glb",
                         "imagePath": "/images/day6/pochaccoV2.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for pochacco v2",
+                        "notes": ""
+                    },
+                    {
+                        "model": "hat",
+                        "modelName": "hat",
+                        "modelPath": "/models/hat.glb",
+                        "imagePath": "/images/day6/hat.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for hat model",
                         "notes": ""
                     }
                 ]

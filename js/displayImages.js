@@ -38,7 +38,8 @@ function createHeader(headerString) {
 }
 
 function createImageElement(model, modeldata) {
-    const modelName = model.model;
+    const modelId = model.model;
+    const modelName = model.modelName;
     const imagePath = model.imagePath;
     const imageAlt = model.imageDescription;
     const imageType = model.imageType;
@@ -49,13 +50,13 @@ function createImageElement(model, modeldata) {
     imgElement.src = imagePath;
     imgElement.alt = imageAlt;
     imgElement.onclick = () => {
-        if (modelName === getCurrentModel()) return;
-        updateCurrentModel(modelName);
+        if (modelId === getCurrentModel()) return;
+        updateCurrentModel(modelId);
         let useDefaults = true; // use pre-defined default values if model defaults aren't listed
-        if (modeldata[modelName]) useDefaults = false;
+        if (modeldata[modelId]) useDefaults = false;
         createScene(modelPath, modeldata, useDefaults);
         startAnimation();
-        createMenu(modelName, modeldata, useDefaults);
+        createMenu(modelId, modeldata, useDefaults);
     };
 
     return imgElement;
