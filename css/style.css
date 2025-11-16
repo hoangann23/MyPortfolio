@@ -1,10 +1,10 @@
 body {
     margin: 0;
-    background-color: black;
+    background-color: white;
 }
 
 h1, p, label {
-    color: white;
+    color: black;
 }
   
 .modelImageSquare {
@@ -53,7 +53,8 @@ h1, p, label {
     flex-direction: row;
     justify-content: space-around;
     gap: 20px;
-    height: 400;
+    height: 300;
+    width: 600;
     overflow-y: auto;
 }
 
