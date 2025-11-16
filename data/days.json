@@ -302,6 +302,22 @@
                         "notes": ""
                     }
                 ]
+            },
+            {
+                "day": 7,
+                "date": "November 16th, 2025",
+                "description": "",
+                "models": [
+                    {
+                        "model": "cattable",
+                        "modelName": "cattable",
+                        "modelPath": "/models/cattable.glb",
+                        "imagePath": "/images/day7/cattable.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for the cat table",
+                        "notes": ""
+                    }
+                ]
             }
         ]
     }
