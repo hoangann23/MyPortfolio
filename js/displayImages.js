@@ -55,7 +55,7 @@ function createImageElement(model, modeldata) {
         if (modeldata[modelName]) useDefaults = false;
         createScene(modelPath, modeldata, useDefaults);
         startAnimation();
-        createSliders(modelName, modeldata, useDefaults);
+        createMenu(modelName, modeldata, useDefaults);
     };
 
     return imgElement;

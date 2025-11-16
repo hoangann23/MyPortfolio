@@ -10,7 +10,7 @@
         <div id="window" style="display: flex; gap: 10px; height: 100vh;">
             <div id="days"></div>
             <div id="canvas">
-                <canvas class="webgl" style="flex: 1;"></canvas>
+                <canvas class="webgl" id="webgl" style="flex: 1;"></canvas>
                 <div id="sliderscontainer"></div>
             </div>
         </div>
@@ -28,6 +28,33 @@
             }
         }
         </script>
-        <script type="module" src="./js/render.js"></script>
+    <script type="module" src="./js/render.js"></script>
+    <script>
+        const canvas = document.getElementById('webgl');
+        canvas.addEventListener('mousedown', function() {
+            if (document.getElementById('camerasliders')) {
+                updateCameraSliders();
+                if (getIsLightAttachedToCamera()) {
+                    updateLightSlidersToMatchCamera();
+                }
+            }
+        });
+        canvas.addEventListener('mouseup', function() {
+            if (document.getElementById('camerasliders')) {
+                updateCameraSliders();
+                if (getIsLightAttachedToCamera()) {
+                    updateLightSlidersToMatchCamera();
+                }
+            }
+        });
+        canvas.addEventListener('wheel', function() {
+            if (document.getElementById('camerasliders')) {
+                updateCameraSliders();
+                if (getIsLightAttachedToCamera()) {
+                    updateLightSlidersToMatchCamera();
+                }
+            }
+        });
+    </script>
     </body>
 </html>

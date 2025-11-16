@@ -54,10 +54,12 @@ function changeModel(modelPath, modelData, useDefaults) {
     loader.load(modelPath, function(glb) {
         let model_position = (useDefaults) ? DEFAULT_MODEL_POSITION : modelData[currentModelName]['default_position'];
         let model_scale = (useDefaults) ? DEFAULT_SCALE : modelData[currentModelName]["default_scale"];
+        let model_rotation = (useDefaults) ? DEFAULT_MODEL_ROTATION : modelData[currentModelName]['default_rotation'];
         model = glb.scene
         model.scale.set(model_scale, model_scale, model_scale);
         // set up initial model.position
         model.position.set(model_position.x, model_position.y, model_position.z);
+        model.rotation.set(model_rotation.x * Math.PI / 180, model_rotation.y * Math.PI / 180, model_rotation.z * Math.PI / 180);
         console.log(glb)
         scene.add(model)
     }, function(xhr) {
@@ -71,7 +73,7 @@ function placeLights(modeldata, useDefaults) {
     //Add lights to the scene, so we can actually see the 3D model
     // to do: add menu options to adjust light intensity, color, and position
     let light_position = (useDefaults === true) ? DEFAULT_LIGHT_POSITION : modeldata[currentModelName]['default_camera'];
-    light = new THREE.DirectionalLight(0xffffff, 5); // (color, intensity)
+    light = new THREE.DirectionalLight(0xffffff, DEFAULT_LIGHT_INTENSITY); // (color, intensity)
     light.position.set(light_position.x, light_position.y, light_position.z) //top-left-ish
     scene.add(light);
     isLightAttachedToCamera = true;
@@ -207,6 +209,11 @@ function fixLightToCamera() {
 }
 window.fixLightToCamera = fixLightToCamera;
 
+function getIsLightAttachedToCamera() {
+    return isLightAttachedToCamera;
+}
+window.getIsLightAttachedToCamera = getIsLightAttachedToCamera;
+
 function updateCameraX(x) {
     if (camera) {
         camera.position.x = x;
@@ -227,3 +234,11 @@ function updateCameraZ(z) {
     }
 }
 window.updateCameraZ = updateCameraZ;
+
+function getCameraPosition() {
+    if (camera) {
+        return camera.position;
+    }
+    return {"x": 0, "y": 0, "z": 0};
+}
+window.getCameraPosition = getCameraPosition;

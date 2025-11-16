@@ -26,10 +26,11 @@ h1, p, label {
 }
 
 .days {
-    position: relative;
     display: flex;
     height: 100vh;
+    width: 50vw;
     overflow-y: auto;
+    margin-right: 10px;
 }
 
 .day {
@@ -47,8 +48,20 @@ h1, p, label {
     flex: 1;
 }
 
-.sliderscontainer{
+#sliderscontainer{
     display: flex;
-    gap: 10px;
-    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    height: 400;
+    overflow-y: auto;
+}
+
+#canvas {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+#camerasliders {
+    margin-right: 20px;
 }
