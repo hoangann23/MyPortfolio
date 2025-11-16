@@ -1,21 +1,18 @@
 (async function loadAndDisplay() {
     try {
-        const data = await window.globalDataReady;
-        logData(data)
-        displayDays(data)
+        const imagedata = await window.imageDataReady;
+        const modeldata = await window.modelDataReady;
+        console.log("image data: ", imagedata);
+        console.log("modeldata: ", modeldata);
+        displayDays(imagedata, modeldata)
     } catch (err) {
         console.error('Error waiting for globalDataReady in displayImages:', err);
     }
 })();
 
-function logData(data) {
-    console.log('displayImages: data', data);
-}
-
-function displayDays(data) {
+function displayDays(imagedata, modeldata) {
     let days = document.getElementById('days');
-    const daysData = data["data"]["days"];
-    console.log(daysData);
+    const daysData = imagedata["data"]["days"];
     daysData.forEach((value, _) => {
         let headerString = `Day ${value.day} - ${value.date}`;
         const headerElement = createHeader(headerString);
@@ -23,11 +20,10 @@ function displayDays(data) {
 
         let dayDiv = document.createElement('div');
         dayDiv.id = `day${value.day}`;
-        console.log(`day id ${dayDiv.id}`);
         dayDiv.className = 'day';
         const models = value.models;
         models.forEach((model, _) => {
-            const imgElement = createImageElement(model);
+            const imgElement = createImageElement(model, modeldata);
             dayDiv.appendChild(imgElement);
         });
 
@@ -41,7 +37,7 @@ function createHeader(headerString) {
     return headerElement;
 }
 
-function createImageElement(model) {
+function createImageElement(model, modeldata) {
     const modelName = model.model;
     const imagePath = model.imagePath;
     const imageAlt = model.imageDescription;
@@ -53,8 +49,13 @@ function createImageElement(model) {
     imgElement.src = imagePath;
     imgElement.alt = imageAlt;
     imgElement.onclick = () => {
-        createScene(modelPath);
+        if (modelName === getCurrentModel()) return;
+        updateCurrentModel(modelName);
+        let useDefaults = true; // use pre-defined default values if model defaults aren't listed
+        if (modeldata[modelName]) useDefaults = false;
+        createScene(modelPath, modeldata, useDefaults);
         startAnimation();
+        createSliders(modelName, modeldata, useDefaults);
     };
 
     return imgElement;

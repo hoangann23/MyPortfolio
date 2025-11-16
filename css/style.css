@@ -3,7 +3,7 @@ body {
     background-color: black;
 }
 
-h1, p {
+h1, p, label {
     color: white;
 }
   
@@ -39,4 +39,16 @@ h1, p {
     flex-wrap: wrap;
     overflow-y: auto;
     margin-bottom: 10px;
+}
+
+.slidercontainer{
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+.sliderscontainer{
+    display: flex;
+    gap: 10px;
+    flex: 1;
 }

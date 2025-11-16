@@ -6,8 +6,8 @@ const canvas = document.querySelector('.webgl')
 const scene = new THREE.Scene()
 // Boiler Plate Code
 const sizes = {
-    width: 400,
-    height: 400
+    width: CANVAS_WIDTH,
+    height: CANVAS_HEIGHT
 }
 
 const loader = new GLTFLoader()
@@ -23,32 +23,41 @@ const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 
 const controls = new OrbitControls(camera, renderer.domElement)
 
 let model
-let modelPosition
-let currentModelPath = ''
+let currentModelName = ''
 
 let light
+let isLightAttachedToCamera = true
 
-function createScene(modelPath) {
-    if (modelPath === currentModelPath) {
-        return; // No change needed
-    }
-    currentModelPath = modelPath;
+function getCurrentModel() {
+    return currentModelName;
+}
+window.getCurrentModel = getCurrentModel;
+
+function updateCurrentModel(modelName) {
+    currentModelName = modelName;
+}
+window.updateCurrentModel = updateCurrentModel;
+
+function createScene(modelPath, modelData, useDefaults) {
     scene.clear()
-    placeLights()
-    setUpCamera()
+    placeLights(modelData, useDefaults)
+    setUpCamera(modelData, useDefaults)
     setUpControls()
-    changeModel(modelPath)
+    changeModel(modelPath, modelData, useDefaults)
 }
 
 window.createScene = createScene;
 
 // Function to change the model path based on the clicked image
-function changeModel(modelPath) {
+function changeModel(modelPath, modelData, useDefaults) {
     // Optionally, you can reload the model here
     loader.load(modelPath, function(glb) {
+        let model_position = (useDefaults) ? DEFAULT_MODEL_POSITION : modelData[currentModelName]['default_position'];
+        let model_scale = (useDefaults) ? DEFAULT_SCALE : modelData[currentModelName]["default_scale"];
         model = glb.scene
-        model.scale.set(50, 50, 50)
-        modelPosition = model.position
+        model.scale.set(model_scale, model_scale, model_scale);
+        // set up initial model.position
+        model.position.set(model_position.x, model_position.y, model_position.z);
         console.log(glb)
         scene.add(model)
     }, function(xhr) {
@@ -58,16 +67,19 @@ function changeModel(modelPath) {
     });
 }
 
-function placeLights() {
+function placeLights(modeldata, useDefaults) {
     //Add lights to the scene, so we can actually see the 3D model
     // to do: add menu options to adjust light intensity, color, and position
+    let light_position = (useDefaults === true) ? DEFAULT_LIGHT_POSITION : modeldata[currentModelName]['default_camera'];
     light = new THREE.DirectionalLight(0xffffff, 5); // (color, intensity)
-    light.position.set(0, 1, 2) //top-left-ish
+    light.position.set(light_position.x, light_position.y, light_position.z) //top-left-ish
     scene.add(light);
+    isLightAttachedToCamera = true;
 }
 
-function setUpCamera() {
-    camera.position.set(0, 1, 2);
+function setUpCamera(modelData, useDefaults) {
+    const camera_position = (useDefaults) ? DEFAULT_CAMERA_POSITION : modelData[currentModelName]["default_camera"]; // update this to check for model conditions
+    camera.position.set(camera_position.x, camera_position.y, camera_position.z);
     scene.add(camera)
 }
 
@@ -89,7 +101,7 @@ window.changeModel = changeModel;
 function animate() {
     requestAnimationFrame(animate)
     controls.update()
-    light.position.copy(camera.position)
+    if (isLightAttachedToCamera) light.position.copy(camera.position)
     renderer.render(scene, camera)
 }
 
@@ -98,12 +110,88 @@ function animate() {
 // Element.prototype.animate method available on DOM elements.
 window.startAnimation = animate;
 
-function updateModelPosition(x, y, z) {
+function updateModelX(x) {
     if (model) {
-        model.position.set(x, y, z);
+        model.position.x = x;
     }
 }
-window.updateModelPosition = updateModelPosition;
+window.updateModelX = updateModelX;
+
+function updateModelY(y) {
+    if (model) {
+        model.position.y = y;
+    }
+}
+window.updateModelY = updateModelY;
+
+function updateModelZ(z) {
+    if (model) {
+        model.position.z = z;
+    }
+}
+window.updateModelZ = updateModelZ;
+
+function updateModelScale(scale) {
+    if (model) {
+        model.scale.set(scale, scale, scale);
+    }
+}
+window.updateModelScale = updateModelScale;
+
+
+function updateRotationX(degrees) {
+    let radians = degrees * Math.PI / 180;
+    if (model) {
+        model.rotation.x = radians;
+    }
+}
+window.updateRotationX = updateRotationX;
+
+function updateRotationY(degrees) {
+    let radians = degrees * Math.PI / 180;
+    if (model) {
+        model.rotation.y = radians;
+    }
+}
+window.updateRotationY = updateRotationY;
+
+function updateRotationZ(degrees) {
+    let radians = degrees * Math.PI / 180;
+    if (model) {
+        model.rotation.z = radians;
+    }
+}
+window.updateRotationZ = updateRotationZ;
+
+function updateLightPositionX(x) {
+    if (light) {
+        light.position.x = x;
+        isLightAttachedToCamera = false;
+        let checkbox = document.getElementById('lightCameraCheckbox');
+        checkbox.checked = false;
+    }
+}
+window.updateLightPositionX = updateLightPositionX;
+
+function updateLightPositionY(y) {
+    if (light) {
+        light.position.y = y;
+        isLightAttachedToCamera = false;
+        let checkbox = document.getElementById('lightCameraCheckbox');
+        checkbox.checked = false;
+    }
+}
+window.updateLightPositionY = updateLightPositionY;
+
+function updateLightPositionZ(z) {
+    if (light) {
+        light.position.z = z;
+        isLightAttachedToCamera = false;
+        let checkbox = document.getElementById('lightCameraCheckbox');
+        checkbox.checked = false;
+    }
+}
+window.updateLightPositionZ = updateLightPositionZ;
 
 function updateLightIntensity(intensity) {
     if (light) {
@@ -112,9 +200,30 @@ function updateLightIntensity(intensity) {
 }
 window.updateLightIntensity = updateLightIntensity;
 
-function updateLightPosition(x, y, z) {
-    if (light) {
-        light.position.set(x, y, z);
+function fixLightToCamera() {
+    isLightAttachedToCamera = !isLightAttachedToCamera;
+    console.log("isLightAttachedToCamera: ", isLightAttachedToCamera);
+    if (isLightAttachedToCamera) light.position.copy(camera.position);
+}
+window.fixLightToCamera = fixLightToCamera;
+
+function updateCameraX(x) {
+    if (camera) {
+        camera.position.x = x;
     }
 }
-window.updateLightPosition = updateLightPosition;
+window.updateCameraX = updateCameraX;
+
+function updateCameraY(y) {
+    if (camera) {
+        camera.position.y = y;
+    }
+}
+window.updateCameraY = updateCameraY;
+
+function updateCameraZ(z) {
+    if (camera) {
+        camera.position.z = z;
+    }
+}
+window.updateCameraZ = updateCameraZ;
