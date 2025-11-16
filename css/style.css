@@ -1,10 +1,10 @@
 body {
     margin: 0;
-    background-color: white;
+    background-color: black;
 }
 
 h1, h2, p, label {
-    color: black;
+    color: white;
 }
   
 .modelImageSquare {
