@@ -256,6 +256,14 @@
                         "imageType": "square",
                         "imageDescription": "thumbnail for pochacco",
                         "notes": ""
+                    },
+                    {
+                        "model": "pochaccoV2",
+                        "modelPath": "/models/pochaccoV2.glb",
+                        "imagePath": "/images/day6/pochaccoV2.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for pochacco v2",
+                        "notes": ""
                     }
                 ]
             }
