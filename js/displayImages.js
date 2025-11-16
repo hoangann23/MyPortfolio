@@ -13,7 +13,7 @@
 function displayDays(imagedata, modeldata) {
     let days = document.getElementById('days');
     const daysData = imagedata["data"]["days"];
-    daysData.forEach((value, _) => {
+    daysData.reverse().forEach((value, _) => {
         let headerString = `Day ${value.day} - ${value.date}`;
         const headerElement = createHeader(headerString);
         days.appendChild(headerElement);
@@ -32,7 +32,7 @@ function displayDays(imagedata, modeldata) {
 }
 
 function createHeader(headerString) {
-    const headerElement = document.createElement('h1');
+    const headerElement = document.createElement('h2');
     headerElement.innerText = headerString;
     return headerElement;
 }

@@ -3,7 +3,7 @@ body {
     background-color: white;
 }
 
-h1, p, label {
+h1, h2, p, label {
     color: black;
 }
   
@@ -25,9 +25,10 @@ h1, p, label {
     display: block;
 }
 
-.days {
+#days {
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    height: 90%;
     width: 50vw;
     overflow-y: auto;
     margin-right: 10px;
@@ -38,7 +39,6 @@ h1, p, label {
     gap: 10px;
     flex: 1;
     flex-wrap: wrap;
-    overflow-y: auto;
     margin-bottom: 10px;
 }
 
@@ -59,8 +59,8 @@ h1, p, label {
 }
 
 #canvas {
-    margin-right: 20px;
-    margin-left: 10px;
+    margin-left: 3%;
+    justify-content: center;
 }
 
 #camerasliders {
