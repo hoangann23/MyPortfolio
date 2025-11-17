@@ -10,8 +10,8 @@
                     {
                         "model": "house",
                         "modelName": "house",
-                        "modelPath": "/models/house.glb",
-                        "imagePath": "/images/day0/house.png",
+                        "modelPath": "/assets/models/house.glb",
+                        "imagePath": "/assets/images/day0/house.png",
                         "imageType": "square", 
                         "imageDescription": "thumbnail for house model",
                         "notes": ""
@@ -19,8 +19,8 @@
                     {
                         "model": "room",
                         "modelName": "room",
-                        "modelPath": "/models/room.glb",
-                        "imagePath": "/images/day0/room.png",
+                        "modelPath": "/assets/models/room.glb",
+                        "imagePath": "/assets/images/day0/room.png",
                         "imageType": "square", 
                         "imageDescription": "thumbnail for room model",
                         "notes": ""
@@ -28,8 +28,8 @@
                     {
                         "model": "rook",
                         "modelName": "rook",
-                        "modelPath": "/models/rook.glb",
-                        "imagePath": "/images/day0/rook.png",
+                        "modelPath": "/assets/models/rook.glb",
+                        "imagePath": "/assets/images/day0/rook.png",
                         "imageType": "square", 
                         "imageDescription": "thumbnail for rook model",
                         "notes": ""
@@ -37,8 +37,8 @@
                     {
                         "model": "cat",
                         "modelName": "cat",
-                        "modelPath": "/models/cat.glb",
-                        "imagePath": "/images/day0/cat.png",
+                        "modelPath": "/assets/models/cat.glb",
+                        "imagePath": "/assets/images/day0/cat.png",
                         "imageType": "square", 
                         "imageDescription": "thumbnail for cat model",
                         "notes": ""
@@ -46,8 +46,8 @@
                     {
                         "model": "bottle",
                         "modelName": "bottle",
-                        "modelPath": "/models/bottle.glb",
-                        "imagePath": "/images/day0/bottle.png",
+                        "modelPath": "/assets/models/bottle.glb",
+                        "imagePath": "/assets/images/day0/bottle.png",
                         "imageType": "square", 
                         "imageDescription": "thumbnail for bottle model",
                         "notes": ""
@@ -55,8 +55,8 @@
                     {
                         "model": "light",
                         "modelName": "light",
-                        "modelPath": "/models/light.glb",
-                        "imagePath": "/images/day0/light.png",
+                        "modelPath": "/assets/models/light.glb",
+                        "imagePath": "/assets/images/day0/light.png",
                         "imageType": "square", 
                         "imageDescription": "thumbnail for light model",
                         "notes": ""
@@ -71,8 +71,8 @@
                     {
                         "model": "pinetree",
                         "modelName": "pinetree",
-                        "modelPath": "/models/pinetree.glb",
-                        "imagePath": "/images/day1/pinetrees.png",
+                        "modelPath": "/assets/models/pinetree.glb",
+                        "imagePath": "/assets/images/day1/pinetrees.png",
                         "imageType": "rectangle", 
                         "imageDescription": "thumbnail for pinetree model",
                         "notes": ""
@@ -87,8 +87,8 @@
                     {
                         "model": "LowPolyWater",
                         "modelName": "LowPolyWater",
-                        "modelPath": "/models/water.glb",
-                        "imagePath": "/images/day2/waterLP.png",
+                        "modelPath": "/assets/models/water.glb",
+                        "imagePath": "/assets/images/day2/waterLP.png",
                         "imageType": "rectangle", 
                         "imageDescription": "thumbnail for LowPolyWater model",
                         "notes": ""
@@ -96,8 +96,8 @@
                     {
                         "model": "LowPolyBottle",
                         "modelName": "LowPolyBottle",
-                        "modelPath": "/models/bottleLP.glb",
-                        "imagePath": "/images/day2/bottleLP.png",
+                        "modelPath": "/assets/models/bottleLP.glb",
+                        "imagePath": "/assets/images/day2/bottleLP.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for LowPolyBottle model",
                         "notes": ""
@@ -105,8 +105,8 @@
                     {
                         "model": "LowPolyRook",
                         "modelName": "LowPolyRook",
-                        "modelPath": "/models/rookLP.glb",
-                        "imagePath": "/images/day2/rookLP.png",
+                        "modelPath": "/assets/models/rookLP.glb",
+                        "imagePath": "/assets/images/day2/rookLP.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for LowPolyRook model",
                         "notes": ""
@@ -114,8 +114,8 @@
                     {
                         "model": "LowPolyCat",
                         "modelName": "LowPolyCat",
-                        "modelPath": "/models/catLP.glb",
-                        "imagePath": "/images/day2/catLP.png",
+                        "modelPath": "/assets/models/catLP.glb",
+                        "imagePath": "/assets/images/day2/catLP.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for LowPolyCat model",
                         "notes": ""
@@ -123,8 +123,8 @@
                     {
                         "model": "LowPolyKirby",
                         "modelName": "LowPolyKirby",
-                        "modelPath": "/models/kirbyLP.glb",
-                        "imagePath": "/images/day2/kirbyLP.png",
+                        "modelPath": "/assets/models/kirbyLP.glb",
+                        "imagePath": "/assets/images/day2/kirbyLP.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for LowPolyKirby model",
                         "notes": ""
@@ -139,8 +139,8 @@
                     {
                         "model": "palmtree",
                         "modelName": "palmTreeTrunk",
-                        "modelPath": "/models/palmtree.glb",
-                        "imagePath": "/images/day3/palmTreeTrunk.png",
+                        "modelPath": "/assets/models/palmtree.glb",
+                        "imagePath": "/assets/images/day3/palmTreeTrunk.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for palm tree trunk without leaves",
                         "notes": ""
@@ -148,8 +148,8 @@
                     {
                         "model": "palmtree",
                         "modelName": "palmTreeLeafPreCut",
-                        "modelPath": "/models/palmtree.glb",
-                        "imagePath": "/images/day3/palmTreeLeaf.png",
+                        "modelPath": "/assets/models/palmtree.glb",
+                        "imagePath": "/assets/images/day3/palmTreeLeaf.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for the palm tree leaf before detailing",
                         "notes": ""
@@ -157,8 +157,8 @@
                     {
                         "model": "palmtree",
                         "modelName": "palmTreeLeafFinal",
-                        "modelPath": "/models/palmtree.glb",
-                        "imagePath": "/images/day3/palmTreeLeafFinal.png",
+                        "modelPath": "/assets/models/palmtree.glb",
+                        "imagePath": "/assets/images/day3/palmTreeLeafFinal.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for the palm tree leaf after detailing",
                         "notes": ""
@@ -166,8 +166,8 @@
                     {
                         "model": "palmtree",
                         "modelName": "palmTreePreShaded",
-                        "modelPath": "/models/palmtree.glb",
-                        "imagePath": "/images/day3/palmTreePreShaded.png",
+                        "modelPath": "/assets/models/palmtree.glb",
+                        "imagePath": "/assets/images/day3/palmTreePreShaded.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for palm tree without material",
                         "notes": ""
@@ -182,8 +182,8 @@
                     {
                         "model": "palmtree",
                         "modelName": "palmTreeFinal1",
-                        "modelPath": "/models/palmtree.glb",
-                        "imagePath": "/images/day4/palmTreeFinal1.png",
+                        "modelPath": "/assets/models/palmtree.glb",
+                        "imagePath": "/assets/images/day4/palmTreeFinal1.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for palm tree",
                         "notes": ""
@@ -191,8 +191,8 @@
                     {
                         "model": "palmtree",
                         "modelName": "palmTreeFinal2",
-                        "modelPath": "/models/palmtree.glb",
-                        "imagePath": "/images/day4/palmTreeFinal2.png",
+                        "modelPath": "/assets/models/palmtree.glb",
+                        "imagePath": "/assets/images/day4/palmTreeFinal2.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for palm tree 2",
                         "notes": ""
@@ -200,8 +200,8 @@
                     {
                         "model": "moon",
                         "modelName": "moon",
-                        "modelPath": "/models/moon.glb",
-                        "imagePath": "/images/day4/crescentMoon.png",
+                        "modelPath": "/assets/models/moon.glb",
+                        "imagePath": "/assets/images/day4/crescentMoon.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for crescent moon",
                         "notes": ""
@@ -209,8 +209,8 @@
                     {
                         "model": "snoopy",
                         "modelName": "snoopy1",
-                        "modelPath": "/models/snoopy.glb",
-                        "imagePath": "/images/day4/snoopy1.png",
+                        "modelPath": "/assets/models/snoopy.glb",
+                        "imagePath": "/assets/images/day4/snoopy1.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for snoopy 1",
                         "notes": ""
@@ -218,8 +218,8 @@
                     {
                         "model": "snoopy",
                         "modelName": "snoopy2",
-                        "modelPath": "/models/snoopy.glb",
-                        "imagePath": "/images/day4/snoopy2.png",
+                        "modelPath": "/assets/models/snoopy.glb",
+                        "imagePath": "/assets/images/day4/snoopy2.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for snoopy 2",
                         "notes": ""
@@ -234,8 +234,8 @@
                     {
                         "model": "leather",
                         "modelName": "leatherWrap",
-                        "modelPath": "/models/leatherwrap.glb",
-                        "imagePath": "/images/day5/leather.png",
+                        "modelPath": "/assets/models/leatherwrap.glb",
+                        "imagePath": "/assets/images/day5/leather.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for leather",
                         "notes": ""
@@ -243,8 +243,8 @@
                     {
                         "model": "ball",
                         "modelName": "ball",
-                        "modelPath": "/models/ball.glb",
-                        "imagePath": "/images/day5/ball.png",
+                        "modelPath": "/assets/models/ball.glb",
+                        "imagePath": "/assets/images/day5/ball.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for ball",
                         "notes": ""
@@ -252,8 +252,8 @@
                     {
                         "model": "moon2",
                         "modelName": "croissant",
-                        "modelPath": "/models/moon2.glb",
-                        "imagePath": "/images/day5/croissant.png",
+                        "modelPath": "/assets/models/moon2.glb",
+                        "imagePath": "/assets/images/day5/croissant.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for croissant",
                         "notes": ""
@@ -261,8 +261,8 @@
                     {
                         "model": "moon2",
                         "modelName": "crescentMoon2",
-                        "modelPath": "/models/moon2.glb",
-                        "imagePath": "/images/day5/crescentMoon2.png",
+                        "modelPath": "/assets/models/moon2.glb",
+                        "imagePath": "/assets/images/day5/crescentMoon2.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for crescent moon 2",
                         "notes": ""
@@ -277,8 +277,8 @@
                     {
                         "model": "pochacco",
                         "modelName": "pochacco",
-                        "modelPath": "/models/pochacco.glb",
-                        "imagePath": "/images/day6/pochacco.png",
+                        "modelPath": "/assets/models/pochacco.glb",
+                        "imagePath": "/assets/images/day6/pochacco.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for pochacco",
                         "notes": ""
@@ -286,8 +286,8 @@
                     {
                         "model": "pochaccoV2",
                         "modelName": "pochaccoV2",
-                        "modelPath": "/models/pochaccoV2.glb",
-                        "imagePath": "/images/day6/pochaccoV2.png",
+                        "modelPath": "/assets/models/pochaccoV2.glb",
+                        "imagePath": "/assets/images/day6/pochaccoV2.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for pochacco v2",
                         "notes": ""
@@ -295,8 +295,8 @@
                     {
                         "model": "hat",
                         "modelName": "hat",
-                        "modelPath": "/models/hat.glb",
-                        "imagePath": "/images/day6/hat.png",
+                        "modelPath": "/assets/models/hat.glb",
+                        "imagePath": "/assets/images/day6/hat.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for hat model",
                         "notes": ""
@@ -311,8 +311,8 @@
                     {
                         "model": "cattable",
                         "modelName": "cattable",
-                        "modelPath": "/models/cattable.glb",
-                        "imagePath": "/images/day7/cattable.png",
+                        "modelPath": "/assets/models/cattable.glb",
+                        "imagePath": "/assets/images/day7/cattable.png",
                         "imageType": "square",
                         "imageDescription": "thumbnail for the cat table",
                         "notes": ""
