@@ -1,6 +1,6 @@
 // Expose a shared promise that resolves when the data is loaded.
 // Consumers can await `window.globalDataReady` or use `.then()`.
-window.imageDataReady = fetch('../days.json')
+window.imageDataReady = fetch('./js/days.json')
     .then(response => {
         if (!response.ok) throw new Error('Network response was not ok: ' + response.status);
         return response.json();
@@ -18,7 +18,7 @@ window.imageDataReady = fetch('../days.json')
     });
 
 
-window.modelDataReady = fetch('../models.json')
+window.modelDataReady = fetch('./js/models.json')
     .then(response => {
         if (!response.ok) throw new Error('Network response was not ok: ' + response.status);
         return response.json();
