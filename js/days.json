@@ -318,6 +318,31 @@
                         "notes": ""
                     }
                 ]
+            },
+            {
+                "day": 8,
+                "date": "November 17th, 2025",
+                "description": "",
+                "models": [
+                    {
+                        "model": "pawn",
+                        "modelName": "pawn",
+                        "modelPath": "./assets/models/pawn.glb",
+                        "imagePath": "./assets/images/day8/pawn.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for pawn model",
+                        "notes": ""
+                    }, 
+                    {
+                        "model": "hornet",
+                        "modelName": "hornet",
+                        "modelPath": "./assets/models/hornet.glb",
+                        "imagePath": "./assets/images/day8/hornet.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for hornet model",
+                        "notes": ""
+                    }
+                ]
             }
         ]
     }
