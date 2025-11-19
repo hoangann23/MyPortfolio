@@ -343,6 +343,31 @@
                         "notes": ""
                     }
                 ]
+            },
+            {
+                "day": 9,
+                "date": "November 18th, 2025",
+                "description": "",
+                "models": [
+                    {
+                        "model": "cookie",
+                        "modelName": "cookie",
+                        "modelPath": "./assets/models/cookie.glb",
+                        "imagePath": "./assets/images/day9/cookie.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for pompompurin cookie",
+                        "notes": ""
+                    },
+                    {
+                        "model": "cattableV2",
+                        "modelName": "cattableV2",
+                        "modelPath": "./assets/models/cattableV2.glb",
+                        "imagePath": "./assets/images/day9/cattableV2.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for cat table with cookies",
+                        "notes": ""
+                    }
+                ]
             }
         ]
     }
