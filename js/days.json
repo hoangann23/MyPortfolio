@@ -368,6 +368,22 @@
                         "notes": ""
                     }
                 ]
+            },
+            {
+                "day": 10,
+                "date": "November 19th, 2025",
+                "description": "",
+                "models": [
+                    {
+                        "model": "pompompurin",
+                        "modelName": "pompompurin",
+                        "modelPath": "./assets/models/pompompurin.glb",
+                        "imagePath": "./assets/images/day10/pompompurin.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for the pompompurin model",
+                        "notes": ""
+                    }
+                ]
             }
         ]
     }

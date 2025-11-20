@@ -205,5 +205,143 @@
         "step": 0.01
       }
     }
+  },
+  "pompompurin": {
+    "default_scale": "34.83",
+    "default_position": {
+      "x": "0",
+      "y": "-1.26",
+      "z": "0"
+    },
+    "default_rotation": {
+      "x": "0",
+      "y": "0",
+      "z": "0"
+    },
+    "default_camera": {
+      "x": "-0.07",
+      "y": "0.94",
+      "z": "2.03"
+    },
+    "translations": {
+      "x_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "y_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "z_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      }
+    },
+    "camera_translations": {
+      "x_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "y_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "z_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      }
+    },
+    "light_translations": {
+      "x_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "y_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "z_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      }
+    }
+  },
+  "cookie": {
+    "default_scale": "50",
+    "default_position": {
+      "x": "0",
+      "y": "-0.64",
+      "z": "0"
+    },
+    "default_rotation": {
+      "x": "0",
+      "y": "0",
+      "z": "0"
+    },
+    "default_camera": {
+      "x": "0",
+      "y": "1",
+      "z": "2"
+    },
+    "translations": {
+      "x_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "y_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "z_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      }
+    },
+    "camera_translations": {
+      "x_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "y_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "z_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      }
+    },
+    "light_translations": {
+      "x_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "y_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "z_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      }
+    }
   }
 }
