@@ -384,6 +384,22 @@
                         "notes": ""
                     }
                 ]
+            },
+            {
+                "day": 11,
+                "date": "November 20th, 2025",
+                "description": "",
+                "models": [
+                    {
+                        "model": "duck",
+                        "modelName": "duck",
+                        "modelPath": "./assets/models/duck.glb",
+                        "imagePath": "./assets/images/day11/duck.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for the duck model",
+                        "notes": ""
+                    }
+                ]
             }
         ]
     }
