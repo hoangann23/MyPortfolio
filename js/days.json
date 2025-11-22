@@ -400,6 +400,22 @@
                         "notes": ""
                     }
                 ]
+            },
+            {
+                "day": 12,
+                "date": "November 21st, 2025",
+                "description": "",
+                "models": [
+                    {
+                        "model": "teacup",
+                        "modelName": "teacup",
+                        "modelPath": "./assets/models/teacup.glb",
+                        "imagePath": "./assets/images/day12/teacup.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for the teacup model",
+                        "notes": ""
+                    }
+                ]
             }
         ]
     }
