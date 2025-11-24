@@ -432,6 +432,22 @@
                         "notes": ""
                     }
                 ]
+            },
+            {
+                "day": 14,
+                "date": "November 23rd, 2025",
+                "description": "",
+                "models": [
+                    {
+                        "model": "puppycatWIP",
+                        "modelName": "puppycatWIP",
+                        "modelPath": "./assets/models/puppycatWIP.glb",
+                        "imagePath": "./assets/images/day14/puppycatWIP.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for puppycat wip",
+                        "notes": ""
+                    }
+                ]
             }
         ]
     }
