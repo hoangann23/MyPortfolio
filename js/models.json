@@ -412,5 +412,74 @@
         "step": 0.01
       }
     }
+  },
+  "puppycatWIP": {
+    "default_scale": "50",
+    "default_position": {
+      "x": "0",
+      "y": "0",
+      "z": "0"
+    },
+    "default_rotation": {
+      "x": "0",
+      "y": "0",
+      "z": "0"
+    },
+    "default_camera": {
+      "x": "-0.77",
+      "y": "4.24",
+      "z": "6.55"
+    },
+    "translations": {
+      "x_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "y_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "z_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      }
+    },
+    "camera_translations": {
+      "x_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "y_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "z_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      }
+    },
+    "light_translations": {
+      "x_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "y_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      },
+      "z_range": {
+        "min": -10,
+        "max": 10,
+        "step": 0.01
+      }
+    }
   }
 }
