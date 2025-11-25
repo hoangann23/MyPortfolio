@@ -448,6 +448,31 @@
                         "notes": ""
                     }
                 ]
+            },
+            {
+                "day": 15,
+                "date": "November 24th, 2025",
+                "description": "",
+                "models": [
+                    {
+                        "model": "puppycatWIP2",
+                        "modelName": "puppycatWIP2",
+                        "modelPath": "./assets/models/puppycatWIP2.glb",
+                        "imagePath": "./assets/images/day15/puppycatWIP2.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for puppycat 2 model",
+                        "notes": ""
+                    },
+                    {
+                        "model": "puzzle",
+                        "modelName": "puzzle",
+                        "modelPath": "./assets/models/puzzle.glb",
+                        "imagePath": "./assets/images/day15/puzzle.png",
+                        "imageType": "square",
+                        "imageDescription": "thumbnail for puzzle piece model",
+                        "notes": ""
+                    }
+                ]
             }
         ]
     }
